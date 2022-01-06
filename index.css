@@ -55,3 +55,38 @@ aside > p {
   display: block;
   font-size: 2.8rem;
 }
+
+@media only screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #nav-container {
+    display: block;
+  }
+
+  .welcome {
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  #drop-btn {
+    align-self: center;
+  }
+
+  aside > p {
+    font-size: 1.44rem;
+    color: #172b4d;
+    max-width: 100vw;
+  }
+
+  body {
+    background: url('./images/header-illsutration-mobile.png') no-repeat center center;
+  }
+}
