@@ -24,3 +24,34 @@ ul {
   display: flex;
   justify-content: center;
 }
+
+#headline-section {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  font-size: 2.9rem;
+}
+
+aside > h2 {
+  color: #172b4d;
+  margin: 0;
+}
+
+aside > p {
+  font-size: 1.44rem;
+  color: #172b4d;
+  max-width: 44vw;
+}
+
+#info {
+  color: #36b37e;
+  display: block;
+  font-size: 2.8rem;
+}
