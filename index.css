@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: url(images/Header-llustration-desktop.png) no-repeat center center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#desktop-nav > ul > li {
+  font-family: 'inter', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.7rem;
+  color: #344563;
+  display: inline-block;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: center;
+}
