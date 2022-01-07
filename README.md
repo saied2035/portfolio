@@ -1,11 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello microverse
+# mobile version skeleton
 
-> webpage response to mobile
-desktop version:
-![screenshot](./screenShotDesktop.jpg)
-mobile version:
+> webpage response to mobile.
+
 ![screenshot](./screenShotMobile.jpg)
 
 secend project at mcroverse mobile skeleton :
@@ -35,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
    run 
-   `python -m server.http`
+   `python -m .http.sever`
 ### Run tests
    `npx hint .` for html check. giving hints about what is needed to and to your html page
    `npx stylelint "**/*.{css,scss}"` for css check
