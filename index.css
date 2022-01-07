@@ -69,3 +69,11 @@ aside > p {
   display: block;
   font-size: 40px;
 }
+/*works section*/
+#work-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 13rem;
+}
