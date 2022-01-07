@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
    run 
-   `python -m .http.sever`
+   `python -m http.sever`
 ### Run tests
    `npx hint .` for html check. giving hints about what is needed to and to your html page
    `npx stylelint "**/*.{css,scss}"` for css check
