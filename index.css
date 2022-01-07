@@ -48,11 +48,13 @@ aside {
   font-size: 2.5rem;
 }
 
-aside > h1 {
+.title {
   color: #172b4d;
+  font-size: 40px;
   margin-block: 0;
   font-weight: bold;
   line-height: 2.5rem;
+  text-align: center;
 }
 
 aside > p {
@@ -65,4 +67,5 @@ aside > p {
 #info {
   color: #36b37e;
   display: block;
+  font-size: 40px;
 }
