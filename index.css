@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  background: url(images/Header-llustration-desktop.png) no-repeat center center;
+  background: url('./images/header-illsutration-mobile.png') no-repeat center 0;
 }
 
 ul {
   list-style-type: none;
 }
 
-#desktop-nav > ul > li {
+li {
   font-family: 'inter', serif;
   font-weight: 600;
   font-size: 1rem;
@@ -16,9 +16,6 @@ ul {
   display: inline-block;
 }
 
-#mobile-nav {
-  display: none;
-}
 
 #nav-container {
   display: flex;
