@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background: url('./images/header-illsutration-mobile.png') no-repeat center 0;
+  background: url('./images/header-illsutration-mobile.png') no-repeat center 2.5rem;
+  font-family: 'Inter',sans-serif;
 }
 
 ul {
@@ -8,10 +9,9 @@ ul {
 }
 
 li {
-  font-family: 'inter', serif;
+  font-family: 'Inter', serif;
   font-weight: 600;
   font-size: 1rem;
-  padding: 0.7rem;
   color: #344563;
   display: inline-block;
 }
@@ -19,11 +19,21 @@ li {
 
 #nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
+.welcome {
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
 
+  }
+
+#mobile-nav {
+    align-self: center;
+    margin-right: 2.5rem;
+  }
 #headline-section {
-  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,27 +43,28 @@ aside {
   align-self: center;
   text-align: center;
   margin: 0;
-  font-size: 2.9rem;
+  font-size: 2.5rem;
 }
 
-aside > h2 {
+aside > h1 {
   color: #172b4d;
-  margin: 0;
+  margin-block-end: 0 ;
+  font-weight: bold;
 }
 
 aside > p {
   font-size: 1.44rem;
   color: #172b4d;
-  max-width: 44vw;
+  margin-block-start: 0.5rem ;
+  margin-block-end: 0;
 }
 
 #info {
   color: #36b37e;
   display: block;
-  font-size: 2.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
   #desktop-nav {
     display: none;
   }
@@ -73,10 +84,6 @@ aside > p {
     font-size: 1.25rem;
   }
 
-  #drop-btn {
-    align-self: center;
-  }
-
   aside > p {
     font-size: 1.44rem;
     color: #172b4d;
@@ -86,4 +93,4 @@ aside > p {
   body {
     background: url('./images/header-illsutration-mobile.png') no-repeat center center;
   }
-}
+}*/
