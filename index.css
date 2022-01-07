@@ -70,10 +70,17 @@ aside > p {
   font-size: 40px;
 }
 /*works section*/
-#work-section {
+#works-section {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-block-start: 13rem;
+  margin-block-start: 12rem;
+}
+#works-title {
+  font-weight: 700;
+  font-size: 40px;
+  color:#172B4D;
+  line-height: 52px;
+  text-align: center;
 }
