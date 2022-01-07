@@ -4,7 +4,13 @@
 
 > webpage response to mobile.
 
-![screenshot](./screenShotMobile.jpg)
+navbar&headline section :
+
+![screenshot](./screenShotMobile1.jpg)
+
+works section :
+
+![screenshot](./screenShotMobile2.jpg)
 
 secend project at mcroverse mobile skeleton :
 
