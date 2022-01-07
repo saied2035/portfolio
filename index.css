@@ -83,4 +83,11 @@ aside > p {
   color:#172B4D;
   line-height: 52px;
   text-align: center;
+  margin-block-end: 1.5rem;
+}
+hr {
+  width: 48px;
+  height: 4px;
+  background: #36B37E;
+  margin-block-start:0;
 }
