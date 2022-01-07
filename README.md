@@ -1,9 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello microverse
+# mobile version skeleton
 
-> webpage response to mobile
-desktop version:
+> webpage response to mobile.
+
+ desktop version:
 ![screenshot](./screenShotDesktop.jpg)
 mobile version:
 ![screenshot](./screenShotMobile.jpg)
