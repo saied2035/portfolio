@@ -4,11 +4,25 @@
 
 > webpage response to mobile.
 
-![screenshot](./screenShotMobile.jpg)
+navbar&headline section :
 
-secend project at mcroverse mobile skeleton :
+![screenshot](./screenShotMobile1.jpg)
 
- building a  responsive webpage for mobile
+works section :
+
+![screenshot](./screenShotMobile2.jpg)
+
+About section :
+
+![screenshot](./screenShotMobile3.jpg)
+
+![screenshot](./screenShotMobile4.jpg)
+
+![screenshot](./screenShotMobile5.jpg)
+
+Thrid project at mcroverse mobile skeleton :
+
+ adding About section to mobile version skeleton project.
 
 ## Built With
 
