@@ -6,6 +6,10 @@ body {
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0 ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 li {
@@ -14,6 +18,7 @@ li {
   font-size: 1rem;
   color: #344563;
   display: inline-block;
+  margin-left: 7px;
 }
 
 #nav-container {
@@ -263,16 +268,14 @@ hr {
 }
 
 .list-item {
-  display: inline-block;
   font-size: 12px;
   line-height: 16px;
   font-weight: 600;
   color: #36b37e;
   padding: 12px;
   border-radius: 8px;
-  background: #fff;
+  background: #ffffff;
   margin-block-end: 0.5rem;
-  text-align: center;
 }
 
 /* footer section */
@@ -347,7 +350,4 @@ textarea {
   color: #42526e;
   margin-block-end: 12rem;
   margin-block-start: 0;
-}
-.social-media-list {
-  padding-inline-start: 0;
 }
