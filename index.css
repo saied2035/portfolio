@@ -274,13 +274,15 @@ hr {
   margin-block-end: 0.5rem;
   text-align: center;
 }
-/*footer section*/
+
+/* footer section */
 #footer {
   display: flex;
   flex-flow: column;
   align-items: center;
   background: url(./images/footer-img.png) right 0 top 638px no-repeat;
 }
+
 #footer-header {
   width: 90vw;
   text-align: center;
@@ -289,32 +291,35 @@ hr {
   line-height: 52px;
   color: #172b4d;
 }
+
 #form {
-   width: 90vw;
+  width: 90vw;
 }
-#input-container{
+
+#input-container {
   border: none;
   display: flex;
   justify-content: center;
   flex-flow: column;
 }
+
 input {
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
   padding: 0.4rem;
   margin-bottom: 15px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
-  background: #ffffff;
+  background: #fff;
   font-size: 15px;
 }
 
 textarea {
   height: 114px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
-  background: #ffffff;
+  background: #fff;
   padding: 0.4rem;
   font-size: 15px;
   font-weight: 400;
@@ -323,17 +328,17 @@ textarea {
 #form-submit {
   margin-left: auto;
   margin-right: auto;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   border-color: snow;
   width: fit-content;
   margin-top: 24px;
   padding: 12px;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 500;
   font-size: 17px;
-
 }
+
 #my-email {
   font-size: 20px;
   line-height: 32px;

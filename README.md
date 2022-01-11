@@ -18,6 +18,8 @@ About section :
 
 ![screenshot](./screenShotMobile4.jpg)
 
+Footer section :
+
 ![screenshot](./screenShotMobile5.jpg)
 
 Thrid project at mcroverse mobile skeleton :
