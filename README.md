@@ -12,9 +12,17 @@ works section :
 
 ![screenshot](./screenShotMobile2.jpg)
 
+About section :
+
+![screenshot](./screenShotMobile3.jpg)
+
+![screenshot](./screenShotMobile4.jpg)
+
+![screenshot](./screenShotMobile5.jpg)
+
 Thrid project at mcroverse mobile skeleton :
 
- adding works section to mobile version skeleton project.
+ adding About section to mobile version skeleton project.
 
 ## Built With
 
