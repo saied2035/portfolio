@@ -6,6 +6,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0;  
 }
 
 li {
@@ -240,5 +241,14 @@ textarea {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 17px;
-
+}
+#footer-list{
+}
+#my-email{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+  margin-block-end: 11.8125rem;
 }
