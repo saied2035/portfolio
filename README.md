@@ -77,6 +77,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse: [microverse community](https://github.com/microverseinc)
+- My partner: [Rahal Mehdi Abdelaziz](https://github.com/Mehdi-Rh)
 
 ## 📝 License
 
