@@ -348,3 +348,6 @@ textarea {
   margin-block-end: 12rem;
   margin-block-start: 0;
 }
+.social-media-list {
+  padding-inline-start: 0;
+}
