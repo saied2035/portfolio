@@ -166,50 +166,52 @@
     	   	  	<li class="list-item">Terminal</li>
     	   	  </ul>
     	   </div>
-    	   <footer id="footer">
-    	   	 <p id="breif">
-	    	   	  I'm always interested in hearing about new projects
-	    	   	  , so if you'd like to chat please get in touch.
-    	   	 </p>
-    	   	 <input id="full-name" type="text" name="name" placeholder="Full name"/>
-    	   	 <input id="email" type="email" name="email" placeholder="Email address"/>
-    	   	 <textarea>Enter text here</textarea>
-    	   	 <button type="submit" id="last-btn" >Get in touch</button>
-    	   	 <ul id="footer-socialmedia-list">
+    </section>   
+    <footer id="footer">
+    	<h1 id="footer-header">
+    		I'm always interested in hearing about new projects
+    		, so if you'd like to chat please get in touch.
+    	</h1>
+    	<form id="form" action="https://formspree.io/f/mpzbwvvz" method="post">
+    		<fieldset id="input-container">
+    			<input placeholder="Enter your username" type="text" name="username" maxlength="30" required />
+    			<input placeholder="Enter your email" type="email" name="email"  required />
+    			<textarea placeholder="Enter your message" maxlength="500" required></textarea>
+    			<button id="form-submit" type="submit">Get in touch</button>
+    		</fieldset>
+    	</form>
+		<ul id="footer-list">
+          <li>
+          	<a href="https://github.com/saied2035">
+          		<img alt="github icon" src="./images/github.png"/>
+          	</a>
+          </li>
 
-		          <li>
-		          	<a href="https://github.com/saied2035">
-		          		<img alt="github icon" src="./images/github.png"/>
-		          	</a>
-		          </li>
+          <li>
+          	<a href="https://www.linkedin.com/in/saiedgaffer/">
+          		<img alt="linkedin icon" src="./images/linkedin.png"/>
+          	</a>
+          </li>
 
-		          <li>
-		          	<a href="https://www.linkedin.com/in/saiedgaffer/">
-		          		<img alt="linkedin icon" src="./images/linkedin.png"/>
-		          	</a>
-		          </li>
+          <li>
+          	<a href="https://angel.co/saied-gaffer">
+          		<img alt="anglelist icon" src="./images/anglelist.png"/>
+          	</a>
+          </li>
 
-		          <li>
-		          	<a href="https://angel.co/saied-gaffer">
-		          		<img alt="anglelist icon" src="./images/anglelist.png"/>
-		          	</a>
-		          </li>
+          <li>
+          	<a href="https://twitter.com/SaiedGaffer">
+          		<img alt="twitter icon" src="./images/twitter.png"/>
+          	</a>
+          </li>
 
-		          <li>
-		          	<a href="https://twitter.com/SaiedGaffer">
-		          		<img alt="twitter icon" src="./images/twitter.png"/>
-		          	</a>
-		          </li>
-
-		          <li>
-		          	<a href="#">
-		          		<img alt="medium icon" src="./images/medium.png"/>
-		          	</a>
-		          </li>
-
-		      </ul>
-		      <p id="my-email">saied2421998@gmail.com</p>
-    	   </footer>
-    </section>            
+          <li>
+          	<a href="#">
+          		<img alt="medium icon" src="./images/medium.png"/>
+          	</a>
+          </li>
+		</ul>
+		<p id="my-email">saied2421998@gmail.com</p>    	
+    </footer>                  
 </body>
 </html>
