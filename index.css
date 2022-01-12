@@ -1,7 +1,11 @@
 body {
-  margin: 0;
-  background: url('./images/header-illsutration-mobile.png') no-repeat center 2.5rem;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url(./images/header-illsutration-mobile.png) no-repeat top;
+    font-family: 'Inter', sans-serif;
+    background-size: contain;
+    background-position-y: 2.5rem;
 }
 
 ul {
@@ -37,13 +41,16 @@ li {
   align-self: center;
   margin-right: 2.5rem;
 }
+#desktop-nav {
+  display: none;
+}
 
 #headline-section {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
 }
 
 aside {
@@ -56,18 +63,19 @@ aside {
 .title {
   color: #172b4d;
   font-size: 40px;
-  margin-block: 0;
-  font-weight: bold;
-  line-height: 2.5rem;
+  font-weight: 700;
+  line-height: 52px;
   text-align: center;
+  width: 60vw;
 }
-
 aside > p {
   font-size: 1.44rem;
   color: #172b4d;
   margin-block-start: 0.5rem;
   margin-block-end: 0;
-  width: 90vw;
+  text-align: center;
+  padding-inline-start: 20px ;
+  padding-inline-end: 20px;
 }
 
 #info {
@@ -81,7 +89,7 @@ aside > p {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  margin-block-start: 8rem;
+  margin-block-start: 20rem;
 }
 
 #works-title {
@@ -350,4 +358,35 @@ textarea {
   color: #42526e;
   margin-block-end: 12rem;
   margin-block-start: 0;
+}
+@media only screen and (min-width: 800px){
+  body{
+        background: url(./images/desktopbackground.png) no-repeat top;
+        background-size: contain;
+  }
+  #nav-container {
+    justify-content: center;
+  }
+  #mobile-nav,.welcome {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+  .desktop-nav-list-item {
+    margin-right: 15px;
+    color: #505f79;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;  
+  }
+  #headline-section {
+    height: 100vh;
+  }
+  .title {
+    line-height: 50px;
+  }
+  aside > p {
+    width: 60.4vw;
+  }
 }
