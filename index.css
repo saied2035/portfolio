@@ -1,3 +1,4 @@
+/* general styles */
 body {
   margin: 0;
   padding: 0;
@@ -23,8 +24,14 @@ li {
   color: #344563;
   display: inline-block;
   margin-left: 7px;
+  cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
+/* header section */
 #nav-container {
   display: flex;
   justify-content: space-between;
@@ -46,19 +53,13 @@ li {
   display: none;
 }
 
+/* headline section */
 #headline-section {
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
   min-height: 100vh;
-}
-
-aside {
-  align-self: center;
-  text-align: center;
-  margin: 0;
-  font-size: 2.5rem;
 }
 
 .title {
@@ -70,6 +71,19 @@ aside {
   width: 60vw;
 }
 
+#info {
+  color: #36b37e;
+  display: block;
+  font-size: 40px;
+}
+
+aside {
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
 aside > p {
   font-size: 1.44rem;
   color: #172b4d;
@@ -78,12 +92,6 @@ aside > p {
   text-align: center;
   padding-inline-start: 20px;
   padding-inline-end: 20px;
-}
-
-#info {
-  color: #36b37e;
-  display: block;
-  font-size: 40px;
 }
 
 /* works section */
@@ -317,7 +325,7 @@ hr {
 }
 
 input {
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   width: 80vw;
   padding: 0.4rem;
@@ -356,7 +364,7 @@ textarea {
   font-size: 17px;
 }
 
-#footer-img-container {
+#footer-imgs-container {
   display: none;
 }
 
@@ -370,12 +378,14 @@ textarea {
   margin-block-start: 0;
 }
 
+/* desktop view */
 @media only screen and (min-width: 800px) {
   body {
     background: url(./images/desktopbackground.png) no-repeat top;
     background-size: contain;
   }
 
+  /* header section */
   #nav-container {
     justify-content: center;
   }
@@ -508,8 +518,6 @@ textarea {
   }
 
   #input-container {
-    border: none;
-    display: flex;
     flex-flow: row;
     justify-content: flex-start;
     margin-inline-start: 0;
@@ -518,15 +526,7 @@ textarea {
   }
 
   input {
-    margin-left: 0;
-    margin-right: auto;
     width: 44vw;
-    padding: 0.4rem;
-    margin-bottom: 15px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    background: #fff;
-    font-size: 15px;
   }
 
   #mobile-input {
@@ -540,28 +540,11 @@ textarea {
   }
 
   textarea {
-    height: 114px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    background: #fff;
-    padding: 0.4rem;
-    font-size: 15px;
-    font-weight: 400;
     width: 44vw;
   }
 
   #form-submit {
     margin-left: 0;
-    margin-right: auto;
-    background: #36b37f;
-    border-radius: 4px;
-    border-color: snow;
-    width: fit-content;
-    margin-top: 24px;
-    padding: 12px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 17px;
   }
 
   #footer-img-container {
