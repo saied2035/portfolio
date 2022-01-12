@@ -8,18 +8,19 @@
 </head>
 <body>
 	<header id="nav-container">		
-		          <p class="welcome">welcome</p>	
-		          <nav id="mobile-nav">
-		          	 <img id="drop-btn" alt="drop menu icon" src="./images/dropMenuIcon.png">
-		          </nav>
-		          <nav id="desktop-nav">
-		          	<ul id="desktop-nav-list">
-		          		<li class="desktop-nav-list-item">Portoflio</li>
-		          		<li class="desktop-nav-list-item">About</li>
-		          		<li class="desktop-nav-list-item">Contact</li>
-		          	</ul>
-		          </nav>  
+      <p class="welcome">welcome</p>	
+      <nav id="mobile-nav">
+      	 <img id="drop-btn" alt="drop menu icon" src="./images/dropMenuIcon.png">
+      </nav>
+      <nav id="desktop-nav">
+      	<ul id="desktop-nav-list">
+      		<li class="desktop-nav-list-item">Portoflio</li>
+      		<li class="desktop-nav-list-item">About</li>
+      		<li class="desktop-nav-list-item">Contact</li>
+      	</ul>
+      </nav>  
     </header>
+
 	<section id="headline-section">
 			<h1 class="title">
 			Hey there. I’m Mariane<span id="info" class="title">I’m a software developer</span>
@@ -183,12 +184,21 @@
     	</h1>
     	<form id="form" action="https://formspree.io/f/mpzbwvvz" method="post">
     		<fieldset id="input-container">
-    			<input placeholder="Enter your username" type="text" name="username" maxlength="30" required />
+    			<input id="mobile-input" placeholder="Enter your username" 
+    			       type="text" name="username" maxlength="30" required />
+    			<input class="desktop-input" placeholder="Frist Name" 
+    			       type="text" name="username" maxlength="30" required />
+    		    <input class="desktop-input" placeholder="Last Name" 
+    			       type="text" name="username" maxlength="30" required />
     			<input placeholder="Enter your email" type="email" name="email"  required />
     			<textarea placeholder="Enter your message" maxlength="500" required></textarea>
     			<button id="form-submit" type="submit">Get in touch</button>
     		</fieldset>
     	</form>
+    	<div id="footer-img-container">
+    		<img alt="footer image 1" src="./images/footerimg1.png">
+    		<img alt="footer image 2" src="./images/footerimg2.png">
+    	</div>
 		<ul>
           <li>
           	<a href="https://github.com/saied2035">
