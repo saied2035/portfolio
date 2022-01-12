@@ -380,13 +380,60 @@ textarea {
     font-weight: bold;
     cursor: pointer;  
   }
-  #headline-section {
-    height: 100vh;
-  }
   .title {
     line-height: 50px;
   }
   aside > p {
     width: 60.4vw;
   }
+
+#works-section {
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+#works-title {
+  grid-column: 1 / 4;
+}
+
+hr {
+    grid-column: 1 / 4;
+}
+
+#grid-item1 {
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+}
+
+#grid-item2 {
+  grid-column: 2 / 3;
+  grid-row: 3/4;
+}
+
+#grid-item3 {
+  grid-column: 3 / 4;
+  grid-row: 3/4;
+}
+
+#grid-item4 {
+  grid-column: 1 / 2;
+  grid-row: 4/5;
+}
+
+#grid-item5 {
+  grid-column: 2/ 3;
+  grid-row: 4/5
+}
+
+#grid-item6 {
+  grid-column: 3 / 4;
+  grid-row: 4/5
+}
+.project-container {
+  height: fit-content;
+  width: 31vw;
+}
+.project-img {
+  width: auto;
+}  
 }
