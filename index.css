@@ -547,7 +547,7 @@ textarea {
     margin-left: 0;
   }
 
-  #footer-img-container {
+  #footer-imgs-container {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
