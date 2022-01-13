@@ -379,7 +379,7 @@ textarea {
 }
 
 /* desktop view */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 992px) {
   body {
     background: url(./images/desktopbackground.png) no-repeat top;
     background-size: contain;
@@ -480,8 +480,6 @@ textarea {
     padding-inline-start: 19.5rem;
     padding-inline-end: 19.5rem;
     background: url(./images/aboutimg2-desktop.png) no-repeat left;
-    height: 21vh;
-    margin-block-end: 16rem;
   }
 
   #About-img2 {
@@ -494,6 +492,7 @@ textarea {
 
   .category {
     width: 31vw;
+    margin-block-end: 13rem;
   }
 
   .category-img {
@@ -511,6 +510,7 @@ textarea {
   #footer-header {
     width: 45vw;
     align-self: flex-start;
+    margin-right: 0.5rem;
   }
 
   #form {
