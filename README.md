@@ -2,7 +2,7 @@
 
 # mobile version skeleton
 
-> webpage response to mobile.
+> portofolio page that is responsive to desktop&mobile.
 
 navbar&headline section :
 
@@ -22,9 +22,21 @@ Footer section :
 
 ![screenshot](./screenShotMobile5.jpg)
 
-Thrid project at mcroverse mobile skeleton :
+desktop version :
 
- adding About section to mobile version skeleton project.
+![screenshot](./screenShotDesktop1.jpg)
+
+![screenshot](./screenShotDesktop2.jpg)
+
+![screenshot](./screenShotDesktop3.jpg)
+
+![screenshot](./screenShotDesktop4.jpg)
+
+![screenshot](./screenShotDesktop5.jpg)
+
+fourth project at mcroverse desktop version of potofolio :
+
+ adjusting the pootofolio to be viewed on mobile&desktop.
 
 ## Built With
 

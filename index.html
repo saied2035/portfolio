@@ -8,11 +8,19 @@
 </head>
 <body>
 	<header id="nav-container">		
-		          <p class="welcome">welcome</p>	
-		          <nav id="mobile-nav">
-		          	 <img id="drop-btn" alt="drop menu icon" src="./images/dropMenuIcon.png">
-		          </nav>  
+      <p class="welcome">welcome</p>	
+      <nav id="mobile-nav">
+      	 <img id="drop-btn" alt="drop menu icon" src="./images/dropMenuIcon.png">
+      </nav>
+      <nav id="desktop-nav">
+      	<ul id="desktop-nav-list">
+      		<li class="desktop-nav-list-item">Portoflio</li>
+      		<li class="desktop-nav-list-item">About</li>
+      		<li class="desktop-nav-list-item">Contact</li>
+      	</ul>
+      </nav>  
     </header>
+
 	<section id="headline-section">
 			<h1 class="title">
 			Hey there. I’m Mariane<span id="info" class="title">I’m a software developer</span>
@@ -56,6 +64,7 @@
 		</ul>
 	</aside>
     </section>
+
     <section id="works-section">
     	<h1 id="works-title">My Recent Works</h1>
     	<hr>
@@ -68,7 +77,7 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     	<div id="grid-item2" class="project-container">
     		<img class="project-img" alt="project image" src="./images/Img-Plaholder.png">
@@ -79,7 +88,7 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     	<div id="grid-item3" class="project-container">
     		<img class="project-img" alt="project image" src="./images/Img-Plaholder.png">
@@ -90,7 +99,7 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     	<div id="grid-item4" class="project-container">
     		<img class="project-img" alt="project image" src="./images/Img-Plaholder.png">
@@ -101,7 +110,7 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     	<div id="grid-item5" class="project-container">
     		<img class="project-img" alt="project image" src="./images/Img-Plaholder.png">
@@ -112,7 +121,7 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     	<div id="grid-item6" class="project-container">
     		<img class="project-img" alt="project image" src="./images/Img-Plaholder.png">
@@ -123,9 +132,10 @@
     			<span class="tech">JavaScript</span>
     			<span class="tech">html</span>
     		</p>
-    		<button type="submit" class="project-button">See Project</button>
+    		<button type="button" class="project-button">See Project</button>
     	</div>
     </section>
+
     <section id="About-section">
     	   <h1 id="About-title">About me</h1>
 		   <p id="About-text">
@@ -133,7 +143,8 @@
 	    	   	, don’t hestiate to contact me.
     	   </p>
     	   <img id="About-img2" alt="About image 2" src="./images/aboutimg2.png">
-    	   <button type="submit" id="About-button">Get My Resume</button>
+    	   <button type="button" id="About-button">Get My Resume</button>
+    	   <div class="categories">
     	   <div class="category">
     	   	  <img class="category-img" alt="category image 1" src="./images/categoryimg1.png" />
     	   	  <p class="category-text">Languages</p>
@@ -166,6 +177,7 @@
     	   	  	<li class="list-item">Terminal</li>
     	   	  </ul>
     	   </div>
+    	</div>
     </section>   
     <footer id="footer">
     	<h1 id="footer-header">
@@ -174,12 +186,21 @@
     	</h1>
     	<form id="form" action="https://formspree.io/f/mpzbwvvz" method="post">
     		<fieldset id="input-container">
-    			<input placeholder="Enter your username" type="text" name="username" maxlength="30" required />
+    			<input id="mobile-input" placeholder="Enter your username" 
+    			       type="text" name="username" maxlength="30" required />
+    			<input class="desktop-input" placeholder="Frist Name" 
+    			       type="text" name="username" maxlength="30" required />
+    		    <input class="desktop-input" placeholder="Last Name" 
+    			       type="text" name="username" maxlength="30" required />
     			<input placeholder="Enter your email" type="email" name="email"  required />
     			<textarea placeholder="Enter your message" maxlength="500" required></textarea>
     			<button id="form-submit" type="submit">Get in touch</button>
     		</fieldset>
     	</form>
+    	<div id="footer-imgs-container">
+    		<img alt="footer image 1" src="./images/footerimg1.png">
+    		<img alt="footer image 2" src="./images/footerimg2.png">
+    	</div>
 		<ul>
           <li>
           	<a href="https://github.com/saied2035">
