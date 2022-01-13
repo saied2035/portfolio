@@ -404,11 +404,17 @@ textarea {
     from {
       opacity: 0;
     }
+<<<<<<< HEAD
 
     50% {
       opacity: 0.5;
     }
 
+=======
+    50% {
+      opacity: 0.5;
+    }
+>>>>>>> 891a3b8facd0ac5ad9c6a59cfd999f1589a6701b
     to {
       opacity: 1;
     }
@@ -489,16 +495,23 @@ textarea {
 
   .project-container {
     width: 31vw;
-  }
 
+  }
   .project-img {
     width: auto;
+<<<<<<< HEAD
     transition: height 2s;
   }
 
   .project-img:hover {
     height: 60vh;
+=======
+    transition:height 2s;
+>>>>>>> 891a3b8facd0ac5ad9c6a59cfd999f1589a6701b
   }
+  .project-img:hover {
+     height: 60vh;
+   }
 
   /* About section */
   #About-section {
@@ -526,18 +539,29 @@ textarea {
   .category {
     width: 31vw;
     margin-block-end: 13rem;
+<<<<<<< HEAD
     transition: width 1s, height 1s;
+=======
+    transition:width 1s,height 1s;
+>>>>>>> 891a3b8facd0ac5ad9c6a59cfd999f1589a6701b
   }
 
   .category-img {
     width: 31vw;
   }
+<<<<<<< HEAD
 
   .category:hover {
     width: 35vw;
     height: 65vh;
   }
 
+=======
+  .category:hover{
+     width: 35vw;
+     height: 65vh;
+  }
+>>>>>>> 891a3b8facd0ac5ad9c6a59cfd999f1589a6701b
   /* footer section */
   #footer {
     flex-flow: row;
