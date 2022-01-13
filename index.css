@@ -420,7 +420,7 @@ textarea {
   .title,
   #info {
     line-height: 50px;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition: font-size 1.2s;
   }
 
   .title:hover,
@@ -430,6 +430,11 @@ textarea {
 
   aside > p {
     width: 60.4vw;
+    transition: opacity 1.2s, width 1.2s;
+  }
+  aside > p:hover {
+    width: 70.4vw;
+    opacity: 0.5;
   }
 
   /* works section */
