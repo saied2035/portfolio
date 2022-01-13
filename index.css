@@ -397,12 +397,14 @@ textarea {
 
   #desktop-nav {
     display: block;
-    animation: 3s 1 fadeIn;
-    animation-delay: 1s;
+    animation: 2s 1 fadeIn;
   }
   @keyframes fadeIn {
     from {
       opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
     }
     to {
       opacity: 1;
@@ -483,11 +485,15 @@ textarea {
 
   .project-container {
     width: 31vw;
-  }
 
+  }
   .project-img {
     width: auto;
+    transition:height 2s;
   }
+  .project-img:hover {
+     height: 60vh;
+   }
 
   /* About section */
   #About-section {
@@ -515,12 +521,16 @@ textarea {
   .category {
     width: 31vw;
     margin-block-end: 13rem;
+    transition:width 1s,height 1s;
   }
 
   .category-img {
     width: 31vw;
   }
-
+  .category:hover{
+     width: 35vw;
+     height: 65vh;
+  }
   /* footer section */
   #footer {
     flex-flow: row;
