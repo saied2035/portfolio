@@ -397,6 +397,21 @@ textarea {
 
   #desktop-nav {
     display: block;
+    animation: 2s 1 fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   .desktop-nav-list-item {
@@ -407,12 +422,25 @@ textarea {
     cursor: pointer;
   }
 
-  .title {
+  .title,
+  #info {
     line-height: 50px;
+    transition: font-size 1.2s;
+  }
+
+  .title:hover,
+  #info:hover {
+    font-size: 60px;
   }
 
   aside > p {
     width: 60.4vw;
+    transition: opacity 1.2s, width 1.2s;
+  }
+
+  aside > p:hover {
+    width: 70.4vw;
+    opacity: 0.5;
   }
 
   /* works section */
@@ -465,6 +493,11 @@ textarea {
 
   .project-img {
     width: auto;
+    transition: height 2s;
+  }
+
+  .project-img:hover {
+    height: 60vh;
   }
 
   /* About section */
@@ -493,10 +526,16 @@ textarea {
   .category {
     width: 31vw;
     margin-block-end: 13rem;
+    transition: width 1s, height 1s;
   }
 
   .category-img {
     width: 31vw;
+  }
+
+  .category:hover {
+    width: 35vw;
+    height: 65vh;
   }
 
   /* footer section */
