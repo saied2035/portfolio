@@ -397,8 +397,18 @@ textarea {
 
   #desktop-nav {
     display: block;
+    animation: 3s 1 fadeIn;
+    animation-delay: 1s;
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
 
+    }
+  }
   .desktop-nav-list-item {
     margin-right: 15px;
     color: #505f79;
