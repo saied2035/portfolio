@@ -417,8 +417,15 @@ textarea {
     cursor: pointer;
   }
 
-  .title {
+  .title,
+  #info {
     line-height: 50px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+  }
+
+  .title:hover,
+  #info:hover {
+    font-size: 60px
   }
 
   aside > p {
