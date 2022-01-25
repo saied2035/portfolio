@@ -8,10 +8,13 @@ body {
   background-size: contain;
   background-position-y: 2.5rem;
 }
+
 a {
   text-decoration: none;
+  font-family: "Inter", sans-serif;
   color: #3a4a42;
 }
+
 ul {
   list-style-type: none;
   padding-inline-start: 0;
@@ -19,11 +22,13 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .mobile-ul {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 24px;
 }
+
 li {
   font-family: "Inter", serif;
   font-weight: 600;
@@ -33,6 +38,7 @@ li {
   margin-left: 7px;
   cursor: pointer;
 }
+
 .mobile-nav-item {
   font-style: normal;
   font-weight: 600;
@@ -90,6 +96,7 @@ button {
   overflow-y: hidden;
   background: none;
 }
+
 #desktop-nav {
   display: none;
 }
@@ -249,7 +256,7 @@ hr {
 }
 
 /* About section */
-#About-section {
+#about-section {
   display: flex;
   flex-flow: column;
 }
