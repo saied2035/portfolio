@@ -7,6 +7,7 @@ body {
   font-family: "Inter", sans-serif;
   background-size: contain;
   background-position-y: 2.5rem;
+
 }
 
 a {
@@ -84,18 +85,7 @@ button {
   margin-top: 20px;
 }
 
-.d-none {
-  display: none;
-}
 
-.h-100 {
-  height: 100vh;
-}
-
-.no-scroll-bg {
-  overflow-y: hidden;
-  background: none;
-}
 
 #desktop-nav {
   display: none;
@@ -108,6 +98,7 @@ button {
   flex-flow: column;
   align-items: center;
   min-height: 100vh;
+  margin-block-end: 20rem;
 }
 
 .title {
@@ -144,10 +135,9 @@ aside > p {
 
 /* works section */
 #works-section {
-  display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  margin-block-start: 20rem;
+  
 }
 
 #works-title {
@@ -212,7 +202,13 @@ hr {
   margin-right: auto;
   margin-block-end: 1.5rem;
 }
-
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+}
 .project-img {
   height: 50vh;
   width: 80vw;
@@ -425,7 +421,18 @@ textarea {
   margin-block-end: 12rem;
   margin-block-start: 0;
 }
+.d-none {
+  display: none;
+}
 
+.h-100 {
+  height: 100vh;
+}
+
+.no-scroll-bg {
+  overflow-y: hidden;
+  background: none;
+}
 /* desktop view */
 @media only screen and (min-width: 992px) {
   body {
