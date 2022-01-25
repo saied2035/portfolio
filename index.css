@@ -8,7 +8,9 @@ body {
   background-size: contain;
   background-position-y: 2.5rem;
 }
-
+a {
+  
+}
 ul {
   list-style-type: none;
   padding-inline-start: 0;
@@ -16,7 +18,9 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+.mobile-ul {
 
+}
 li {
   font-family: 'Inter', serif;
   font-weight: 600;
@@ -49,6 +53,13 @@ button {
   margin-right: 2.5rem;
 }
 
+.mobile-menu {
+
+}
+
+.d-none {
+  display: none;
+}
 #desktop-nav {
   display: none;
 }
