@@ -616,6 +616,16 @@ textarea {
     height: 60vh;
   }
 
+  /* Project Popup */
+  .popup {
+    width: 950px;
+    height: 1083px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 50px solid red;
+  }
+
   /* About section */
   #About-section {
     background: url(./images/aboutimg1-desktop.png) no-repeat right 0;

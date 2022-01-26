@@ -57,11 +57,11 @@ const projectsArr = projects.map((project) => {
   p.className = "project-name";
   const div = document.createElement("div");
   div.className = "popup-img";
-  const popupXicon = document.createElement("img")
-  popupXicon.src= './images/popup-XIcon.png'
-  popupXicon.alt = 'popup x icon'
-  popupXicon.className = "popup-x-icon"
-  div.appendChild(popupXicon)
+  const popupXicon = document.createElement("img");
+  popupXicon.src = "./images/popup-XIcon.png";
+  popupXicon.alt = "popup x icon";
+  popupXicon.className = "popup-x-icon";
+  div.appendChild(popupXicon);
   const cln = project.cloneNode(true);
   cln.children[1].classList.remove("description");
   cln.children[1].classList.add("popup-description");
@@ -80,13 +80,17 @@ const projectBtns = document.querySelectorAll(".project-button");
 const popUpWindow = (event) => {
   const projectsPops = document.querySelectorAll(".popup");
   const popupIndex = Array.from(projectBtns).indexOf(event.target);
-  projectsPops[popupIndex].prepend(projectsArr[popupIndex].description);
-  projectsPops[popupIndex].prepend(projectsArr[popupIndex].technologies);
-  projectsPops[popupIndex].prepend(projectsArr[popupIndex].name);
-  projectsPops[popupIndex].prepend(projectsArr[popupIndex].image);
-  projectsPops[popupIndex].classList.toggle("d-none");
-  document.querySelector('body').classList.add('no-scroll-bg')
-  document.querySelector('#About-img2').classList.add('d-none')
+  projectsPops[popupIndex].children[0].prepend(
+    projectsArr[popupIndex].description
+  );
+  projectsPops[popupIndex].children[0].prepend(
+    projectsArr[popupIndex].technologies
+  );
+  projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].name);
+  projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].image);
+  projectsPops[popupIndex].children[0].classList.toggle("d-none");
+  document.querySelector("body").classList.add("no-scroll-bg");
+  document.querySelector("#About-img2").classList.add("d-none");
 };
 
 projectBtns[0].addEventListener("click", popUpWindow);
@@ -98,12 +102,14 @@ projectBtns[5].addEventListener("click", popUpWindow);
 
 const closePopup = (event) => {
   if (event.target && event.target.className === "popup-x-icon") {
-      document.querySelector('.popup-x-icon').parentNode.parentNode.classList.toggle("d-none");
-      document.querySelector("body").classList.remove("no-scroll-bg");
-      document.querySelector('#About-img2').classList.remove('d-none')
-      document.querySelector(".project-name").remove();
-      document.querySelector(".popup-img").remove();
-      document.querySelector(".popup-description").remove();
+    document
+      .querySelector(".popup-x-icon")
+      .parentNode.parentNode.parentNode.classList.toggle("d-none");
+    document.querySelector("body").classList.remove("no-scroll-bg");
+    document.querySelector("#About-img2").classList.remove("d-none");
+    document.querySelector(".project-name").remove();
+    document.querySelector(".popup-img").remove();
+    document.querySelector(".popup-description").remove();
   }
 };
 document.addEventListener("click", closePopup);
