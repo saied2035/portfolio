@@ -58,9 +58,15 @@ const projectsArr = projects.map((project) => {
   const div = document.createElement("div");
   div.className = "popup-img";
   const popupXicon = document.createElement("img");
-  popupXicon.src = "./images/popup-XIcon.png";
+  if (window.innerWidth > 992) {
+    popupXicon.src = "./images/popup-xIcon-desktop.png";
+    popupXicon.className = "popup-xicon-desktop";
+  } else {
+    popupXicon.src = "./images/popup-XIcon.png";
+    popupXicon.className = "popup-x-icon";
+  }
+
   popupXicon.alt = "popup x icon";
-  popupXicon.className = "popup-x-icon";
   div.appendChild(popupXicon);
   const cln = project.cloneNode(true);
   cln.children[1].classList.remove("description");

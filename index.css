@@ -214,15 +214,16 @@ hr {
   align-items: center;
 }
 .popup-img {
-  width: 90vw;
+  width: 100%;
   min-height: 30vh;
   background: url(./images/popup-img.png) no-repeat;
   margin-top: 25px;
-  background-size: 100% auto;
+  background-size: cover;
   margin-block-end: 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 .popup-x-icon {
   margin-top: 7%;
@@ -620,12 +621,43 @@ textarea {
 
   /* Project Popup */
   .popup {
-    width: 950px;
-    height: 1083px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 50px solid red;
+    background: rgba(193, 199, 208, 0.9);
+  }
+
+  .popup > div {
+    position: relative;
+    width: 75vw;
+    height: 90vh;
+    background: white;
+    margin: 30px auto;
+  }
+
+  .popup-img {
+    background: url(images/desktop-popup.png) no-repeat center;
+    background-size: 90% 100%;
+    z-index: 1;
+    min-height: 50vh;
+  }
+
+  .popup-xicon-desktop {
+    position: absolute;
+    width: 3%;
+    top: 3px;
+    right: 40px;
+  }
+
+  .popup-description {
+    line-height: 20px;
+    text-align: justify;
+    padding: 0 40px;
+    margin-block: 0;
+  }
+  .popup-techs {
+    padding: 0 40px;
+  }
+  .project-name {
+    align-self: flex-start;
+    padding-left: 40px;
   }
 
   /* About section */
