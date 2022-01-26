@@ -10,6 +10,7 @@ body {
 
 }
 
+
 a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -135,6 +136,7 @@ aside > p {
 
 /* works section */
 #works-section {
+  display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
   
@@ -207,7 +209,6 @@ hr {
     height: 100%;
     position: fixed;
     top: 0;
-    background: white;
 }
 .project-img {
   height: 50vh;

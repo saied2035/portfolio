@@ -66,54 +66,12 @@ const projectsArr = projects.map((project) => {
 const projectBtns = document.querySelectorAll('.project-button')
 const popUpWindow = (event) => {
   const projectsPops = document.querySelectorAll('.popup')
-    switch (event.target.parentNode.id){
-       case 'grid-item1':
-          projectsPops[0].prepend(projectsArr[0].description)
-          projectsPops[0].prepend(projectsArr[0].technologies)
-          projectsPops[0].prepend(projectsArr[0].name)
-          projectsPops[0].prepend(projectsArr[0].image)
-          projectsPops[0].classList.remove('d-none')
-
-       break;
-       case 'grid-item2':
-          projectsPops[1].prepend(projectsArr[1].description)
-          projectsPops[1].prepend(projectsArr[1].technologies)
-          projectsPops[1].prepend(projectsArr[1].name)
-          projectsPops[1].prepend(projectsArr[1].image)
-          projectsPops[1].classList.remove('d-none')
-       break;
-       case 'grid-item3':
-          projectsPops[2].prepend(projectsArr[2].description)
-          projectsPops[2].prepend(projectsArr[2].technologies)
-          projectsPops[2].prepend(projectsArr[2].name)
-          projectsPops[2].prepend(projectsArr[2].image)
-          projectsPops[2].classList.remove('d-none')
-       break;
-       case 'grid-item4':
-          projectsPops[3].prepend(projectsArr[3].description)
-          projectsPops[3].prepend(projectsArr[3].technologies)
-          projectsPops[3].prepend(projectsArr[3].name)
-          projectsPops[3].prepend(projectsArr[3].image)
-          projectsPops[3].classList.remove('d-none')
-       break;
-       case 'grid-item5':
-          projectsPops[4].prepend(projectsArr[4].description)
-          projectsPops[4].prepend(projectsArr[4].technologies)
-          projectsPops[4].prepend(projectsArr[4].name)
-          projectsPops[4].prepend(projectsArr[4].image)
-          projectsPops[4].classList.remove('d-none')
-       break;
-       case 'grid-item6':
-          projectsPops[5].prepend(projectsArr[5].description)
-          projectsPops[5].prepend(projectsArr[5].technologies)
-          projectsPops[5].prepend(projectsArr[5].name)
-          projectsPops[5].prepend(projectsArr[5].image)
-          projectsPops[5].classList.remove('d-none')
-        break;
-       default :
-         break; 
-    }
-    
+  const popupIndex= Array.from(projectBtns).indexOf(event.target)
+  projectsPops[popupIndex].prepend(projectsArr[popupIndex].description)
+  projectsPops[popupIndex].prepend(projectsArr[popupIndex].technologies)
+  projectsPops[popupIndex].prepend(projectsArr[popupIndex].name)
+  projectsPops[popupIndex].prepend(projectsArr[popupIndex].image)
+  projectsPops[popupIndex].classList.remove('d-none')
 }
 
 
