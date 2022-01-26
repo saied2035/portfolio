@@ -101,7 +101,6 @@ const closePopup = (event) => {
       document.querySelector('.popup-x-icon').parentNode.parentNode.classList.toggle("d-none");
       document.querySelector("body").classList.remove("no-scroll-bg");
       document.querySelector('#About-img2').classList.remove('d-none')
-      document.querySelector(".popup-x-icon").remove();
       document.querySelector(".project-name").remove();
       document.querySelector(".popup-img").remove();
       document.querySelector(".popup-description").remove();
