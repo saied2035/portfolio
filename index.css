@@ -1,5 +1,6 @@
 /* general styles */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -200,6 +201,7 @@ hr {
   margin-right: auto;
   margin-block-end: 1.5rem;
 }
+
 .popup {
   width: 100%;
   height: 100%;
@@ -208,11 +210,13 @@ hr {
   background: white;
   overflow-x: auto;
 }
+
 .popup > div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .popup-img {
   width: 100%;
   min-height: 30vh;
@@ -225,6 +229,7 @@ hr {
   align-items: flex-start;
   box-sizing: border-box;
 }
+
 .popup-x-icon {
   margin-top: 7%;
   margin-right: 7%;
@@ -266,6 +271,7 @@ hr {
   margin-block-end: 0;
   margin-right: 15px;
 }
+
 .project-img {
   height: 50vh;
   width: 80vw;
@@ -485,6 +491,7 @@ textarea {
   margin-block-end: 12rem;
   margin-block-start: 0;
 }
+
 .d-none {
   display: none;
 }
@@ -497,6 +504,7 @@ textarea {
   overflow-y: hidden;
   background: none;
 }
+
 /* desktop view */
 @media only screen and (min-width: 992px) {
   body {
@@ -656,15 +664,18 @@ textarea {
     padding: 0 40px;
     margin-block: 0;
   }
+
   .popup-techs {
     padding: 0 40px;
   }
+
   .project-name {
     align-self: flex-start;
     padding-left: 40px;
     width: 48%;
     font-size: 2.413273vw;
   }
+
   .button-container {
     align-self: flex-start;
     gap: 5px;
@@ -672,9 +683,12 @@ textarea {
     margin-right: 2.5rem;
     margin-block-start: 0.5rem;
   }
-  .live-code, .see-source {
+
+  .live-code,
+  .see-source {
     padding: 12px 0 12px 12px;
   }
+
   /* About section */
   #About-section {
     background: url(./images/aboutimg1-desktop.png) no-repeat right 0;
