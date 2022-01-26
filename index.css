@@ -215,8 +215,9 @@ hr {
 .popup-img {
   width: 90vw;
   height: 25vh;
-  background-image: url(./images/popup-img.png);
+  background: url(./images/popup-img.png) no-repeat;
   margin-top: 25px;
+  background-size: 100% auto;
 }
 
 .project-name {
@@ -286,7 +287,9 @@ hr {
   padding: 0.5rem;
 }
 
-.project-button {
+.project-button,
+.live-code,
+.see-source {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
