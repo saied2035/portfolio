@@ -208,16 +208,24 @@ hr {
   background: white;
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  margin-block-end: 0;
+  overflow-x: auto;
 }
 .popup-img {
   width: 90vw;
-  height: 25vh;
+  min-height: 30vh;
   background: url(./images/popup-img.png) no-repeat;
   margin-top: 25px;
   background-size: 100% auto;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.popup-x-icon {
+  margin-top: 7%;
+  margin-right: 7%;
+  width: 4%;
 }
 
 .project-name {
@@ -228,6 +236,7 @@ hr {
   line-height: 44px;
   padding: 0 15px;
   margin-block-end: 0;
+  margin-block-start: 0.5rem;
 }
 
 .button-container {
@@ -244,7 +253,7 @@ hr {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
+  text-align: justify;
   padding: 0 15px;
 }
 
