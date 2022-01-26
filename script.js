@@ -88,7 +88,7 @@ const popUpWindow = (event) => {
   );
   projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].name);
   projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].image);
-  projectsPops[popupIndex].children[0].classList.toggle("d-none");
+  projectsPops[popupIndex].classList.toggle("d-none");
   document.querySelector("body").classList.add("no-scroll-bg");
   document.querySelector("#About-img2").classList.add("d-none");
 };
