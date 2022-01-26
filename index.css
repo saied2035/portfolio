@@ -622,28 +622,32 @@ textarea {
   /* Project Popup */
   .popup {
     background: rgba(193, 199, 208, 0.9);
+    overflow-x: hidden;
   }
 
   .popup > div {
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     width: 75vw;
     height: 90vh;
     background: white;
     margin: 30px auto;
+    overflow-y: auto;
   }
 
   .popup-img {
     background: url(images/desktop-popup.png) no-repeat center;
-    background-size: 90% 100%;
-    z-index: 1;
-    min-height: 50vh;
+    margin-top: 30px;
+    background-size: 92% 100%;
+    min-height: 40vh;
   }
 
   .popup-xicon-desktop {
     position: absolute;
-    width: 3%;
-    top: 3px;
-    right: 40px;
+    width: 2vw;
+    top: 0.0754147812971342vh;
+    right: 3.01659125188537vw;
   }
 
   .popup-description {
@@ -658,8 +662,19 @@ textarea {
   .project-name {
     align-self: flex-start;
     padding-left: 40px;
+    width: 48%;
+    font-size: 2.413273vw;
   }
-
+  .button-container {
+    align-self: flex-start;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    margin-block-start: 0.5rem;
+  }
+  .live-code, .see-source {
+    padding: 12px 0 12px 12px;
+  }
   /* About section */
   #About-section {
     background: url(./images/aboutimg1-desktop.png) no-repeat right 0;
