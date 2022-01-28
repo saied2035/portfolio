@@ -1,10 +1,10 @@
 /* mobile menu */
-
-const mobileNav = () => {
   const headerElementsToHide = document.querySelectorAll('.welcome,#drop-btn');
   const nav = document.querySelector('#mobile-nav');
   const mobileArr = ['Portoflio', 'About', 'Contact'];
   const sectionIds = ['works-section', 'About-section', 'footer'];
+const mobileNav = () => {
+
   document.querySelector('header').classList.add('h-100');
   document.querySelector('body').classList.add('no-scroll-bg');
   nav.className = 'mobile-menu';
@@ -70,16 +70,19 @@ const getProjects = () => {
     }
     popupXicon.alt = 'popup x icon';
     div.appendChild(popupXicon);
-    const cln = project.cloneNode(true);
-    cln.children[1].classList.remove('description');
-    cln.children[1].classList.add('popup-description');
-    cln.children[1].innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
-    cln.children[2].classList.add('popup-techs');
+    project.classList.remove('description');
+    project.classList.add('popup-description');
+    project.innerText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy
+    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the relea`;
+    project.classList.add('popup-techs');
     return {
       name: p,
-      description: cln.children[1],
+      description: project.children[1],
       image: div,
-      technologies: cln.children[2],
+      technologies: project.children[2],
     };
   });
   return projectsArr;
