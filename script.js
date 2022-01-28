@@ -140,29 +140,24 @@ const closePopup = (event) => {
 };
 document.addEventListener('click', closePopup);
 
-const getEmail = () => {
-   return document.querySelector('#email').value
-}
+const getEmail = () => document.querySelector('#email').value;
 const validateEmail = () => {
-   const email = getEmail()
-   return email === email.toLowerCase()
-}
+  const email = getEmail();
+  return email === email.toLowerCase();
+};
 const showErrorMsg = () => {
-  const error = document.querySelector('small')
-  error.innerText = "Please,type all the email letters in lower case"
-  error.classList.toggle('dn')
-  return error
-}
+  const error = document.querySelector('small');
+  error.innerText = 'Please,type all the email letters in lower case';
+  error.classList.toggle('dn');
+  return error;
+};
 const submitDecision = (event) => {
-      event.preventDefault()
-      if (!validateEmail()){
-        return showErrorMsg()
-      }
-      else{
-        return event.target.submit()
-      }
-      
-        
-}
+  event.preventDefault();
+  if (!validateEmail()) {
+    return showErrorMsg();
+  }
+
+  return event.target.submit();
+};
 const form = document.querySelector('#form');
-form.addEventListener('submit',submitDecision)
+form.addEventListener('submit', submitDecision);
