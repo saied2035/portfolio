@@ -135,7 +135,7 @@ aside > p {
 /* works section */
 #works-section {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
 }
 
 #works-title {
@@ -190,7 +190,6 @@ hr {
 
 .project-container {
   width: 70vw;
-  height: fit-content;
   display: flex;
   flex-flow: column;
   margin-block-start: 2.5rem;
@@ -199,10 +198,12 @@ hr {
   margin-block-end: 1.5rem;
   justify-self: center;
 }
+
 .project-img {
   width: 100%;
   height: 50vh;
 }
+
 .popup {
   width: 100%;
   height: 100%;
@@ -225,9 +226,9 @@ hr {
 }
 
 .popup-x-icon {
-    position: fixed;
-    top: 8px;
-    right: 8px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
 }
 
 .project-name {
@@ -266,7 +267,6 @@ hr {
   margin-right: 15px;
 }
 
-
 .description {
   text-align: center;
   font-size: 24px;
@@ -275,7 +275,6 @@ hr {
   color: #3a4a42;
   margin-block-end: 0;
   margin: 0 auto;
-
 }
 
 .techs {
@@ -563,12 +562,6 @@ small {
 
   aside > p {
     width: 60.4vw;
-    transition: opacity 1.2s, width 1.2s;
-  }
-
-  aside > p:hover {
-    width: 70.4vw;
-    opacity: 0.5;
   }
 
   /* works section */
@@ -614,9 +607,10 @@ small {
     grid-row: 4/5;
   }
 
- .project-container {
-   width: 30vw;
- }
+  .project-container {
+    width: 30vw;
+  }
+
   /* Project Popup */
   .popup {
     background: rgba(193, 199, 208, 0.9);

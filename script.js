@@ -1,35 +1,35 @@
 const projects = [
-        {
-        name: 'To-do list',
-        description: "the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.",
-        image: './images/toDoListPopup.jpg',
-        },
-        {
-        name: 'Smart brain',
-        description: "the smart brain project is a web app that detects faces and guesses their names, ages, and mood. it got built with React&Redux front-end side and Nodejs&Postgresql back-end side.",
-        image: './images/smartBrainPopup.jpg',
-        },
-        {
-        name: 'Robofriends',
-        description: "simple website displaying robots. you can search for a robot by name. this website is a good demonstration to practice React&Redux.",
-        image: './images/roboFriendsPopup.jpg',
-        },
-        {
-        name: 'Nvidia GTC event',
-        description: "Creating a webpage for GTC Nvidia's next event in March 2022. a simple website to show some details about the event. there is a description, speakers section, sponsors, the programs section, and contact info.",
-        image: './images/nvidiaEventGTCPopup.jpg',
-        },
-        {
-        name: 'Awesome books',
-        description: "a list of the awesome books you prefer. you can store, delete a list of the books you read. displaying the book with its title and author. it got built with modules&ES6.",
-        image: './images/awesomeBooksPopup.jpg',
-        },
-        {
-        name: 'To-do list',
-        description: "the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.",
-        image: './images/toDoListPopup.jpg',
-        }
-]
+  {
+    name: 'To-do list',
+    description: 'the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.',
+    image: './images/toDoListPopup.jpg',
+  },
+  {
+    name: 'Smart brain',
+    description: 'the smart brain project is a web app that detects faces and guesses their names, ages, and mood. it got built with React&Redux front-end side and Nodejs&Postgresql back-end side.',
+    image: './images/smartBrainPopup.jpg',
+  },
+  {
+    name: 'Robofriends',
+    description: 'simple website displaying robots. you can search for a robot by name. this website is a good demonstration to practice React&Redux.',
+    image: './images/roboFriendsPopup.jpg',
+  },
+  {
+    name: 'Nvidia GTC event',
+    description: "Creating a webpage for GTC Nvidia's next event in March 2022. a simple website to show some details about the event. there is a description, speakers section, sponsors, the programs section, and contact info.",
+    image: './images/nvidiaEventGTCPopup.jpg',
+  },
+  {
+    name: 'Awesome books',
+    description: 'a list of the awesome books you prefer. you can store, delete a list of the books you read. displaying the book with its title and author. it got built with modules&ES6.',
+    image: './images/awesomeBooksPopup.jpg',
+  },
+  {
+    name: 'To-do list',
+    description: 'the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.',
+    image: './images/toDoListPopup.jpg',
+  },
+];
 
 /* mobile menu */
 
@@ -86,8 +86,7 @@ document.addEventListener('click', resetToDefault);
 /* works section */
 
 const getProjects = () => {
-  const projectsArr = projects.map((project,i) => {
-
+  const projectsArr = projects.map((project, i) => {
     const projectName = document.createElement('p');
     projectName.innerText = project.name;
     projectName.className = 'project-name';
@@ -95,15 +94,15 @@ const getProjects = () => {
     const description = document.createElement('p');
     description.innerText = project.description;
     description.className = 'popup-description';
-    
-    const projectsFromHTML = document.querySelectorAll(".project-container")
-    const cln = projectsFromHTML[i].cloneNode(true)
-    const technologies= cln.children[2]
-    technologies.classList.remove('techs')
-    technologies.classList.add('popup-techs')
+
+    const projectsFromHTML = document.querySelectorAll('.project-container');
+    const cln = projectsFromHTML[i].cloneNode(true);
+    const technologies = cln.children[2];
+    technologies.classList.remove('techs');
+    technologies.classList.add('popup-techs');
     const img = document.createElement('img');
     img.className = 'popup-img';
-    img.src=project.image
+    img.src = project.image;
     const popupXicon = document.createElement('img');
     if (window.innerWidth >= 992) {
       popupXicon.src = './images/popup-xIcon-desktop.png';
@@ -115,10 +114,10 @@ const getProjects = () => {
     popupXicon.alt = 'popup x icon';
     return {
       name: projectName,
-      description: description,
+      description,
       image: img,
-      technologies: technologies,
-      close: popupXicon
+      technologies,
+      close: popupXicon,
     };
   });
   return projectsArr;
