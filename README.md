@@ -4,49 +4,17 @@
 
 > portofolio page that is responsive to desktop&mobile.
 
-navbar&headline section :
-
-![screenshot](./screenShotMobile1.jpg)
-
-works section :
-
-![screenshot](./screenShotMobile2.jpg)
-
-About section :
-
-![screenshot](./screenShotMobile3.jpg)
-
-![screenshot](./screenShotMobile4.jpg)
-
-Footer section :
-
-![screenshot](./screenShotMobile5.jpg)
-
-desktop version :
-
-![screenshot](./screenShotDesktop1.jpg)
-
-![screenshot](./screenShotDesktop2.jpg)
-
-![screenshot](./screenShotDesktop3.jpg)
-
-![screenshot](./screenShotDesktop4.jpg)
-
-![screenshot](./screenShotDesktop5.jpg)
-
-fourth project at mcroverse desktop version of potofolio :
-
- adjusting the pootofolio to be viewed on mobile&desktop.
 
 ## Built With
 
 - HTML
 - CSS
+- JS
 - liners for testing
 
 ## Live Demo
 
-[Live Demo Link](https://saied2035.github.io/mobile-version-skeleton/)
+[Live Demo Link](https://saied2035.github.io/portfolio/)
 
 
 ## Getting Started
@@ -80,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/saied2035/mobile-version-skeleton/issues).
+Feel free to check the [issues page](https://github.com/saied2035/portfolio/issues).
 
 ## Show your support
 
@@ -89,7 +57,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse: [microverse community](https://github.com/microverseinc)
-- My partner: [Rahal Mehdi Abdelaziz](https://github.com/Mehdi-Rh)
 
 ## 📝 License
 
