@@ -135,8 +135,7 @@ aside > p {
 /* works section */
 #works-section {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: 1fr ;
 }
 
 #works-title {
@@ -190,18 +189,20 @@ hr {
 }
 
 .project-container {
-  width: 80vw;
+  width: 70vw;
+  height: fit-content;
   display: flex;
   flex-flow: column;
-  justify-content: center;
   margin-block-start: 2.5rem;
   border-radius: 8px;
   border: 1px solid #d0d9d4;
-  margin-left: auto;
-  margin-right: auto;
   margin-block-end: 1.5rem;
+  justify-self: center;
 }
-
+.project-img {
+  width: 100%;
+  height: 50vh;
+}
 .popup {
   width: 100%;
   height: 100%;
@@ -220,20 +221,13 @@ hr {
 .popup-img {
   width: 100%;
   min-height: 30vh;
-  background: url(./images/popup-img.png) no-repeat;
-  margin-top: 25px;
-  background-size: cover;
   margin-block-end: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  box-sizing: border-box;
 }
 
 .popup-x-icon {
-  margin-top: 7%;
-  margin-right: 7%;
-  width: 4%;
+    position: fixed;
+    top: 8px;
+    right: 8px;
 }
 
 .project-name {
@@ -244,7 +238,7 @@ hr {
   line-height: 44px;
   padding: 0 15px;
   margin-block-end: 0;
-  margin-block-start: 0.5rem;
+  margin-block-start: 0;
 }
 
 .button-container {
@@ -272,10 +266,6 @@ hr {
   margin-right: 15px;
 }
 
-.project-img {
-  height: 50vh;
-  width: 80vw;
-}
 
 .description {
   text-align: center;
@@ -284,6 +274,8 @@ hr {
   line-height: 32px;
   color: #3a4a42;
   margin-block-end: 0;
+  margin: 0 auto;
+
 }
 
 .techs {
@@ -311,7 +303,7 @@ hr {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   color: #fff;
   background: #36b37f;
@@ -581,8 +573,7 @@ small {
 
   /* works section */
   #works-section {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #works-title {
@@ -623,19 +614,9 @@ small {
     grid-row: 4/5;
   }
 
-  .project-container {
-    width: 31vw;
-  }
-
-  .project-img {
-    width: auto;
-    transition: height 2s;
-  }
-
-  .project-img:hover {
-    height: 60vh;
-  }
-
+ .project-container {
+   width: 30vw;
+ }
   /* Project Popup */
   .popup {
     background: rgba(193, 199, 208, 0.9);
@@ -654,10 +635,10 @@ small {
   }
 
   .popup-img {
-    background: url(images/desktop-popup.png) no-repeat center;
+    width: 92%;
+    height: 50vh;
+    margin: 0 auto;
     margin-top: 30px;
-    background-size: 92% 100%;
-    min-height: 40vh;
   }
 
   .popup-xicon-desktop {
@@ -679,7 +660,7 @@ small {
   }
 
   .project-name {
-    align-self: flex-start;
+    align-self: center;
     padding-left: 40px;
     width: 48%;
     font-size: 2.413273vw;
@@ -696,6 +677,7 @@ small {
   .live-code,
   .see-source {
     padding: 12px 0 12px 12px;
+    margin: 0;
   }
 
   /* About section */

@@ -1,3 +1,36 @@
+const projects = [
+        {
+        name: 'To-do list',
+        description: "the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.",
+        image: './images/toDoListPopup.jpg',
+        },
+        {
+        name: 'Smart brain',
+        description: "the smart brain project is a web app that detects faces and guesses their names, ages, and mood. it got built with React&Redux front-end side and Nodejs&Postgresql back-end side.",
+        image: './images/smartBrainPopup.jpg',
+        },
+        {
+        name: 'Robofriends',
+        description: "simple website displaying robots. you can search for a robot by name. this website is a good demonstration to practice React&Redux.",
+        image: './images/roboFriendsPopup.jpg',
+        },
+        {
+        name: 'Nvidia GTC event',
+        description: "Creating a webpage for GTC Nvidia's next event in March 2022. a simple website to show some details about the event. there is a description, speakers section, sponsors, the programs section, and contact info.",
+        image: './images/nvidiaEventGTCPopup.jpg',
+        },
+        {
+        name: 'Awesome books',
+        description: "a list of the awesome books you prefer. you can store, delete a list of the books you read. displaying the book with its title and author. it got built with modules&ES6.",
+        image: './images/awesomeBooksPopup.jpg',
+        },
+        {
+        name: 'To-do list',
+        description: "the to-do list is a project that you can save your to-do tasks. You can remove, add, and update your tasks. it got built with Webpack&ES6.",
+        image: './images/toDoListPopup.jpg',
+        }
+]
+
 /* mobile menu */
 
 const mobileNav = () => {
@@ -53,13 +86,24 @@ document.addEventListener('click', resetToDefault);
 /* works section */
 
 const getProjects = () => {
-  const projects = Array.from(document.querySelectorAll('.project-container'));
-  const projectsArr = projects.map((project) => {
-    const p = document.createElement('p');
-    p.innerText = 'Keeping track of hundreds of components';
-    p.className = 'project-name';
-    const div = document.createElement('div');
-    div.className = 'popup-img';
+  const projectsArr = projects.map((project,i) => {
+
+    const projectName = document.createElement('p');
+    projectName.innerText = project.name;
+    projectName.className = 'project-name';
+
+    const description = document.createElement('p');
+    description.innerText = project.description;
+    description.className = 'popup-description';
+    
+    const projectsFromHTML = document.querySelectorAll(".project-container")
+    const cln = projectsFromHTML[i].cloneNode(true)
+    const technologies= cln.children[2]
+    technologies.classList.remove('techs')
+    technologies.classList.add('popup-techs')
+    const img = document.createElement('img');
+    img.className = 'popup-img';
+    img.src=project.image
     const popupXicon = document.createElement('img');
     if (window.innerWidth >= 992) {
       popupXicon.src = './images/popup-xIcon-desktop.png';
@@ -69,17 +113,12 @@ const getProjects = () => {
       popupXicon.className = 'popup-x-icon';
     }
     popupXicon.alt = 'popup x icon';
-    div.appendChild(popupXicon);
-    const cln = project.cloneNode(true);
-    cln.children[1].classList.remove('description');
-    cln.children[1].classList.add('popup-description');
-    cln.children[1].innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea';
-    cln.children[2].classList.add('popup-techs');
     return {
-      name: p,
-      description: cln.children[1],
-      image: div,
-      technologies: cln.children[2],
+      name: projectName,
+      description: description,
+      image: img,
+      technologies: technologies,
+      close: popupXicon
     };
   });
   return projectsArr;
@@ -99,9 +138,11 @@ const popUpWindow = (event) => {
     );
     projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].name);
     projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].image);
+    projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].close);
   } else {
     projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].name);
     projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].image);
+    projectsPops[popupIndex].children[0].prepend(projectsArr[popupIndex].close);
     projectsPops[popupIndex].children[0].appendChild(
       projectsArr[popupIndex].technologies,
     );
@@ -126,9 +167,11 @@ projectBtns[5].addEventListener('click', popUpWindow);
 const closePopup = (event) => {
   if (event.target && event.target.className.includes('popup-x')) {
     if (document.querySelector('.popup-xicon-desktop')) {
-      document.querySelector('.popup-xicon-desktop').parentNode.parentNode.parentNode.classList.toggle('d-none');
+      document.querySelector('.popup-xicon-desktop').parentNode.parentNode.classList.toggle('d-none');
+      document.querySelector('.popup-xicon-desktop').remove();
     } else {
-      document.querySelector('.popup-x-icon').parentNode.parentNode.parentNode.classList.toggle('d-none');
+      document.querySelector('.popup-x-icon').parentNode.parentNode.classList.toggle('d-none');
+      document.querySelector('.popup-x-icon').remove();
     }
     document.querySelector('body').classList.remove('no-scroll-bg');
     document.querySelector('#About-img2').classList.remove('d-none');
